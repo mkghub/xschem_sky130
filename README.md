@@ -1,5 +1,5 @@
 # xschem_sky130
-XSCHEM symbol libraries for the Google-Skywater 130nm process design kit. 
+XSCHEM test schematics and primitives for the Google-Skywater 130nm process design kit. 
 ## This repository contains:
 
 - [`sky130_fd_pr      `](https://github.com/StefanSchippers/xschem_sky130/tree/main/sky130_fd_pr) Xschem SKY130 component library
