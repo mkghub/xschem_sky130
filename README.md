@@ -1,5 +1,5 @@
 # xschem_sky130
-XSCHEM test schematics and primitives for the Google-Skywater 130nm process design kit.
+A modified version of XSCHEM test schematics and primitives for the Google-Skywater 130nm process design kit.
 This is for the case when the length and area scales are not altered by the simulation 'option scale'
 ## This repository contains:
 
