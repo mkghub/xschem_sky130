@@ -1,8 +1,8 @@
 v {xschem version=2.9.8 file_version=1.2}
 G {}
 K {type=capacitor
-format="@spiceprefix@name @pinlist sky130_fd_pr__@model w=@w l=@l MF=@MF"
-template="name=C1 model=cap_mim_m3_2 w=1u l=1u MF=1 spiceprefix=X"
+format="@spiceprefix@name @pinlist sky130_fd_pr__@model w=@w l=@l mf=@mf"
+template="name=C1 model=cap_mim_m3_2 w=1u l=1u mf=1 spiceprefix=X"
 }
 V {}
 S {}
@@ -17,5 +17,6 @@ T {c0} 5 -27.5 0 0 0.15 0.15 {layer=7}
 T {c1} 5 18.75 0 0 0.15 0.15 {layer=7}
 T {@name} 20 -28.75 0 0 0.2 0.2 {}
 T {@w / @l} 20 1.25 0 0 0.2 0.2 {}
-T {MF=@MF} 20 16.25 0 0 0.2 0.2 {}
+T {mf=@mf} 20 16.25 0 0 0.2 0.2 {}
 T {@model} 20 -13.75 0 0 0.2 0.2 {}
+T {tcleval(ceff = [ sky130_mim_m3_cb @w @l @mf ]F )} 20 31.25 0 0 0.2 0.2 {layer=13}

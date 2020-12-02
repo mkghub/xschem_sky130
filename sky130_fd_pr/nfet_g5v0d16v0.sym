@@ -22,9 +22,12 @@ format="@spiceprefix@name @pinlist sky130_fd_pr__@model w=@w l=@l
 template="name=M1
 l=0.7u
 w=5.0u
-ad=\\"'w * 0.29u'\\" pd=\\"'2 * (w + 0.29u)'\\"
-as=\\"'w * 0.29u'\\" ps=\\"'2 * (w + 0.29u)'\\"
-nrd=\\"'0.29u / w'\\" nrs=\\"'0.29u / w'\\"
+ad=\\"tcleval([sky130_fet_ad_cb @w ])\\"
+pd=\\"tcleval([sky130_fet_pd_cb @w ])\\"
+as=\\"tcleval([sky130_fet_ad_cb @w ])\\" 
+ps=\\"tcleval([sky130_fet_pd_cb @w ])\\"
+nrd=\\"tcleval([sky130_fet_nrd_cb @w ])\\" 
+nrs=\\"tcleval([sky130_fet_nrd_cb @w ])\\"
 sa=0 sb=0 sd=0
 nf=1 mult=1
 model=nfet_g5v0d16v0

@@ -55,7 +55,8 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 # If unset $USER_CONF_DIR/simulations is assumed (normally ~/.xschem/simulations) 
 #
 # set netlist_dir $env(HOME)/.xschem/simulations
-
+set netlist_dir ~/Spice_Dev/xschemX/xschem_sky130-main2/simulations   
+# mod1
 
 ###########################################################################
 ## change default [] with some other characters for bussed signals 
@@ -194,8 +195,12 @@ set utile_cmd_path ${XSCHEM_SHAREDIR}/utile/utile
 # lappend tcl_files /home/schippes/x/Stefan_decoder/anddec.tcl
 lappend tcl_files ${XSCHEM_SHAREDIR}/ngspice_backannotate.tcl
 lappend tcl_files scripts/sky130_models.tcl
+lappend tcl_files scripts/sky130_callbacks.tcl              
+# mod2
 #### toolbar
 set toolbar_visible 0
 
-set SKYWATER_MODELS ~/projects/foundry/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
+#set SKYWATER_MODELS ~/projects/foundry/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
 set SKYWATER_STDCELLS ~/projects/foundry/skywater-pdk/libraries/sky130_fd_sc_hd/latest
+set SKYWATER_MODELS sky130_fd_pr_models                     
+# mod3
