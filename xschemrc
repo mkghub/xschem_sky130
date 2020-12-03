@@ -55,7 +55,7 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 # If unset $USER_CONF_DIR/simulations is assumed (normally ~/.xschem/simulations) 
 #
 # set netlist_dir $env(HOME)/.xschem/simulations
-set netlist_dir ~/Spice_Dev/xschemX/xschem_sky130-main2/simulations   
+set netlist_dir $env(PWD)/simulations   
 # mod1
 
 ###########################################################################
